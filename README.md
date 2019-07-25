@@ -1,7 +1,17 @@
-# iStats [![Gem Version](https://badge.fury.io/rb/iStats.svg)](http://badge.fury.io/rb/iStats)
+#### iStats from the repo of https://github.com/Chris911/iStats
 
-https://github.com/Chris911/iStats
-iStats is a command-line tool that allows you to easily grab the CPU temperature, fan speeds and battery information on OS X. If you'd like to see more data available feel free to open an issue.
+iStats is a command-line tool that allows you to view the CPU temperature, fan speeds and battery information on OS X using the System Management Console Library.
+
+##### Other similar repos dshb, libsmc, applesmc
+
+#### Issues
+
+- used on macBookPro 2014 macOS 10.13.6
+- had to force install from gem file sparkr
+- fixed Deprecated CFPropertyListCreateXMLData to CFPropertyListCreateData to get rid of build errors
+- Added bin/setup and bin/rake compile
+- changed name and path to C extension
+- Run with bin/istats -f was not installed
 
 ## Installation
 
@@ -11,16 +21,6 @@ iStats is a command-line tool that allows you to easily grab the CPU temperature
 
 If you are running an older version of OS X and the install fails you might want to try running this command instead:  
 `sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install iStats`
-
-## Screenshot
-
-#### All Stats
-
-![](http://i.imgur.com/c4xLB8u.png)
-
-#### Sparkline levels
-
-![](http://i.imgur.com/ht2NZCL.gif)
 
 ## Usage
 
