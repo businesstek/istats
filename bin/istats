@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 # coding: utf-8
 
-$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
-
-require 'iStats'
+# $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+require "bundler/setup"
+require "iStats"
 
 IStats::Command.execute()

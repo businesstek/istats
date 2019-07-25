@@ -1,6 +1,6 @@
-iStats [![Gem Version](https://badge.fury.io/rb/iStats.svg)](http://badge.fury.io/rb/iStats)
-======
+# iStats [![Gem Version](https://badge.fury.io/rb/iStats.svg)](http://badge.fury.io/rb/iStats)
 
+https://github.com/Chris911/iStats
 iStats is a command-line tool that allows you to easily grab the CPU temperature, fan speeds and battery information on OS X. If you'd like to see more data available feel free to open an issue.
 
 ## Installation
@@ -8,14 +8,18 @@ iStats is a command-line tool that allows you to easily grab the CPU temperature
     $ gem install iStats
 
 ##### Note
-If you are running an older version of OS X and the install fails you might want to try running this command instead:     
+
+If you are running an older version of OS X and the install fails you might want to try running this command instead:  
 `sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install iStats`
 
 ## Screenshot
+
 #### All Stats
+
 ![](http://i.imgur.com/c4xLB8u.png)
 
 #### Sparkline levels
+
 ![](http://i.imgur.com/ht2NZCL.gif)
 
 ## Usage
@@ -99,10 +103,10 @@ iStats now supports extra sensors for advanced users. Here's how to enable that 
     OS X: 10.12.6    
     Ruby: 2.0.0
   </p>
-</details>   
+</details>
 
 #### Zabbix Integration
 
 iStats has a "scan zabbix" mode which will emit JSON suitable for use with
-[Zabbix](https://zabbix.com/) low-level discovery.  See the accompanying
+[Zabbix](https://zabbix.com/) low-level discovery. See the accompanying
 template and agent config in the `integrations` directory.

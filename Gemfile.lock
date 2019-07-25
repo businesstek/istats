@@ -9,13 +9,16 @@ GEM
   remote: https://rubygems.org/
   specs:
     parseconfig (1.0.8)
+    rake (12.3.2)
     sparkr (0.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.16)
   iStats!
+  rake (= 12.3.2)
 
 BUNDLED WITH
    1.16.1

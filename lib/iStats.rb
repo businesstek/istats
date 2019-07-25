@@ -1,9 +1,9 @@
 # Extensions (C libs)
-require 'ext/osx_stats'
+require 'smc'
 
 # Gems
-require 'optparse'
-require 'sparkr'
+require "optparse"
+require "sparkr"
 
 # Internal
 require 'iStats/version'
@@ -18,6 +18,7 @@ require 'iStats/extra'
 require 'iStats/smc'
 require 'iStats/settings'
 require 'iStats/utils'
+
 
 module IStats
   def self.options

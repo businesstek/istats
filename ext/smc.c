@@ -219,8 +219,9 @@ int SMCGetFanNumber(char *key)
  */
 void dumpDict (CFDictionaryRef Dict)
 {
-    // Helper function to just dump a CFDictioary as XML
-    CFDataRef xml = CFPropertyListCreateXMLData(kCFAllocatorDefault, (CFPropertyListRef)Dict);
+    // Helper function to just dump a CFDictionary as XML
+    // CFDataRef xml = CFPropertyListCreateXMLData(kCFAllocatorDefault, (CFPropertyListRef)Dict);
+    CFDataRef xml = CFPropertyListCreateData(kCFAllocatorDefault, (CFPropertyListRef)Dict,100,0, NULL);
     if (xml) { write(1, CFDataGetBytePtr(xml), CFDataGetLength(xml)); CFRelease(xml); }
 }
 
@@ -330,7 +331,7 @@ VALUE BATTERY_STATS = Qnil;
  * Define Ruby modules and associated methods
  * We never call this, Ruby does.
 */
-void Init_osx_stats() {
+void Init_smc() {
     SMC_INFO = rb_define_module("SMC_INFO");
     rb_define_method(SMC_INFO,"is_key_supported",method_SMCKeySupported,1);
 
