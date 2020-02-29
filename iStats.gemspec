@@ -41,5 +41,5 @@ Gem::Specification.new do |s|
   s.add_dependency "parseconfig", "~> 1.0"
 
   s.add_development_dependency "bundler", "~> 1.16"
-  s.add_development_dependency "rake", "12.3.2"
+  s.add_development_dependency "rake", "13.0.1"
 end
